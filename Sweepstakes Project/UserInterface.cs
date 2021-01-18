@@ -36,9 +36,10 @@ namespace Sweepstakes_Project
             return emailInput;
 
         }
+             // Do I need to implement this?        
         public int ContestantRegistrationNumber()
         {
-
+            
 
 
         }

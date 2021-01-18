@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes_Project
 {
-    class Contestant
+    public class Contestant
     {
         //member Variables
 
@@ -27,8 +27,14 @@ namespace Sweepstakes_Project
 
         //Member Variables
 
+          // Why isnt interfaces working? They have same name as UserInterface class.
         public Contestant ContestantInformation()
         {
+            Contestant contestant = new Contestant();
+            contestant.firstName = UserInterface.ContestantFirstName();
+            contestant.lastName = UserInterface.ContestantLastName();
+            contestant.email = UserInterface.Contestantemail();
+            return contestant;
             
 
         }
