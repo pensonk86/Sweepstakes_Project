@@ -23,21 +23,21 @@ namespace Sweepstakes_Project
         public string LastName { get => lastName; set => lastName = value; }
         public string Email { get => email; set => email = value; }
         public int RegistrationNumber { get => registrationNumber; set => registrationNumber = value; }
-        
+
 
         //Member Variables
 
-          // Why isnt interfaces working? They have same name as UserInterface class.
-        public Contestant ContestantInformation()
-        {
-            Contestant contestant = new Contestant();
-            contestant.firstName = UserInterface.ContestantFirstName();
-            contestant.lastName = UserInterface.ContestantLastName();
-            contestant.email = UserInterface.Contestantemail();
-            return contestant;
-            
+        // Why isnt interfaces working? They have same name as UserInterface class.
 
+        public Contestant()
+        {
+            firstName = UserInterface.ContestantFirstName();
+            lastName = UserInterface.ContestantLastName();
+            email = UserInterface.ContestantEmail();
+            
         }
+
+
 
 
 

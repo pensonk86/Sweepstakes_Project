@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes_Project
 {
-    class UserInterface
+    static class UserInterface
     {
-        public string ContestantFirstName()
+        public static string ContestantFirstName()
         {
             Console.WriteLine("Enter Your First Name");
             string firstNameInput = Console.ReadLine();
@@ -17,7 +17,7 @@ namespace Sweepstakes_Project
             return firstNameInput;
 
         }
-        public string ContestantLastName()
+        public static string ContestantLastName()
         {
 
             Console.WriteLine("Enter Your Last Name?");
@@ -27,7 +27,7 @@ namespace Sweepstakes_Project
             return lastNameInput;
 
         }
-        public string ContestantEmail()
+        public static string ContestantEmail()
         {
             Console.WriteLine("Enter Your Email Address");
             string emailInput = Console.ReadLine();
@@ -36,13 +36,8 @@ namespace Sweepstakes_Project
             return emailInput;
 
         }
-             // Do I need to implement this?        
-        public int ContestantRegistrationNumber()
-        {
-            
-
-
-        }
+             
+        
 
 
 

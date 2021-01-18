@@ -10,20 +10,26 @@ namespace Sweepstakes_Project
     {
         Dictionary<int, Contestant> dictionary;
         public string name;
-        public int registrationNumber;
 
+        public Sweepstakes()
+        {
+            dictionary = new Dictionary<int, Contestant>();
+ 
+        }
 
 
         public void RegisterContestant(Contestant contestant)
         {
-            registrationNumber = dictionary.Count();
-            dictionary.Add(registrationNumber, contestant);
+            contestant.RegistrationNumber = dictionary.Count();
+            dictionary.Add(contestant.registrationNumber, contestant);
 
 
         }
             
         public void PickWinner()
         {
+            int contestantWon;
+            string name;
 
 
 
@@ -31,8 +37,8 @@ namespace Sweepstakes_Project
        
         public void PrintContestantInfo(Contestant contestant)
         {
-
-
+            Console.WriteLine("First Name: {0} Last Name: {1} Email: {2} ", contestant.firstName, contestant.lastName, contestant.email);
+            Console.ReadLine();
 
         }
 

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes_Project
 {
-       //  
-    public interface ISweepstakesManager
+       //  possibly not implemented yet?
+     interface ISweepstakesManager
      {
         void InsertSweepstakes(Sweepstakes sweepstakes);
         Sweepstakes GetSweepstakes();
