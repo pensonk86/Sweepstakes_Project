@@ -8,11 +8,23 @@ namespace Sweepstakes_Project
 {
     
      // Figure out why its not inheriting
-    public class SweepstakesStackManager : ISweepstakesManager
+    class SweepstakesStackManager : ISweepstakesManager
     {
-     
-    
-    
+        Stack<Sweepstakes> stack = new Stack<Sweepstakes>();
+       public void InsertSweepstakes(Sweepstakes sweepstakes)
+       {
+            stack.Push(sweepstakes);
+
+       }
+        public Sweepstakes GetSweepstakes()
+        {
+
+
+
+        }
+
+
+
 
     }
 

@@ -11,8 +11,9 @@ namespace Sweepstakes_Project
         Dictionary<int, Contestant> dictionary;
         public string name;
 
-        public Sweepstakes()
+        public Sweepstakes(string name)
         {
+            this.name = name;
             dictionary = new Dictionary<int, Contestant>();
  
         }
@@ -30,7 +31,19 @@ namespace Sweepstakes_Project
         {
             int contestantWon;
             string name;
+            contestantWon = random.Next(1, dictionary.Count());
+            for (int i = 0; i < dictionary.Count; i++)
+            {
+                if (contestantWon == dictionary.Count(i));
+                {
+                    name = dictionary.Count(i).value.firstName + dictionary.Count(i).value.lastName;
+                    return name;
 
+                }
+
+
+            }
+            
 
 
         }

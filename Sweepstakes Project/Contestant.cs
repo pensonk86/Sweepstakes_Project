@@ -27,13 +27,14 @@ namespace Sweepstakes_Project
 
         //Member Variables
 
-        // Why isnt interfaces working? They have same name as UserInterface class.
+        
 
         public Contestant()
         {
             firstName = UserInterface.ContestantFirstName();
             lastName = UserInterface.ContestantLastName();
             email = UserInterface.ContestantEmail();
+            
             
         }
 

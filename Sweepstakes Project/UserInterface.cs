@@ -36,7 +36,29 @@ namespace Sweepstakes_Project
             return emailInput;
 
         }
-             
+        public static string CreateSweepstakes()
+        {
+            Console.WriteLine("what is the name of the sweepstakes?");
+            string sweepstake = Console.ReadLine();
+            return Sweepstakes;
+
+
+        }
+        public static string ChooseManagement()
+        {
+            Console.WriteLine("Please choose which management to use");
+            Console.WriteLine("");
+            Console.WriteLine("Input {Q} for Queue Manager");
+            Console.WriteLine("");
+            Console.WriteLine("or");
+            Console.WriteLine("");
+            Console.WriteLine("input {S} for Stack Manager");
+            string input = Console.ReadLine();
+            return input;
+
+
+        }
+            
         
 
 
